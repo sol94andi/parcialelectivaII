@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "0e475ace-7e60-4217-9d93-f2803d9f885c",
+		"name": "Create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/database",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"database"
+					]
+				},
+				"description": "Crea una base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"namedb\": \"dbflask\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/db",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"db"
+					]
+				},
+				"description": "Crear"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/database",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/tables/dbflask",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tables",
+						"dbflask"
+					]
+				},
+				"description": "Consulta"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/ctable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nametable\": \"users\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ctable",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ctable"
+					]
+				},
+				"description": "crear tabla"
+			},
+			"response": []
+		}
+	]
+}
