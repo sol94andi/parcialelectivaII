@@ -1,13 +1,16 @@
 from src.models.bd import DatabaseModel
 from src import app
 
-class DatabaseController():
-    def list(self):
-        databaseModel = DatabaseModel()
-        data = databaseModel.lists()
+databaseModel = DatabaseModel()
 
+class DatabaseController():
+    def list(self):        
+        data = databaseModel.lists()
         return data
 
     def create(self, namedb):
-        databaseModel = DatabaseModel()
-        databaseModel.create(namedb) 
+        databaseModel.create(namedb)
+
+    def search(self, db):
+        data = databaseModel.listTables(db)
+        return data

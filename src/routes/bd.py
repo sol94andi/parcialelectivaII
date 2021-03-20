@@ -16,3 +16,8 @@ def databaseCreate():
     databaseController.create(namedb)
 
     return make_response('Base de datos creada con exito', 201)
+
+@app.route('/tables/<db>', methods=['GET'])
+def tableList(db):
+    tables = databaseController.search(db)
+    return make_response(jsonify(tables), 200)
