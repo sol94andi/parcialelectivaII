@@ -6,4 +6,4 @@ from src.controllers import *
 from src.routes import *
 
 def start_app():
-    app.run(port = 3000, debug=True)
+    app.run(port = 8890, debug=True)
